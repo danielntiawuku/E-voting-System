@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #001e40;
+  --color-primary-container: #003366;
+  --color-on-primary: #ffffff;
+  --color-secondary: #735c00;
+  --color-secondary-container: #fed65b;
+  --color-on-secondary-container: #745c00;
+  --color-background: #f8f9ff;
+  --color-on-background: #0b1c30;
+  --color-surface: #f8f9ff;
+  --color-on-surface: #0b1c30;
+  --color-on-surface-variant: #43474f;
+  --color-surface-container: #e5eeff;
+  --color-surface-container-low: #eff4ff;
+  --color-surface-container-high: #dce9ff;
+  --color-surface-container-highest: #d3e4fe;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-tertiary-container: #00b27b;
+  --color-outline-variant: #c3c6d1;
+  --color-outline: #737780;
+  --color-theme-error: #ba1a1a;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: radial-gradient(circle at top right, #e5eeff 0%, #f8f9ff 50%, #eff4ff 100%);
+  min-height: 100vh;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html, body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Custom scrollbar none helper utility */
+.scrollbar-none::-webkit-scrollbar {
+  display: none !important;
+}
+.scrollbar-none {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+.login-card-shadow {
+  box-shadow: 0 20px 25px -5px rgba(0, 30, 64, 0.05), 0 10px 10px -5px rgba(0, 30, 64, 0.02);
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+}
+
+.bg-pattern {
+  background-image: radial-gradient(#dce9ff 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 178, 123, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(0, 178, 123, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 178, 123, 0); }
+}
+
+.pulse-dot {
+  animation: pulse 2s infinite;
+}

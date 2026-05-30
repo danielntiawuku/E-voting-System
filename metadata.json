@@ -1,0 +1,6 @@
+{
+  "name": "GTU e-Vote",
+  "description": "Ghana Telecom University institutional digital voting platform with secure verification, real-time auditing, interactive ballot casting, and dynamic results visualization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
